@@ -1,7 +1,7 @@
 {
   "pipelineJobs": [
     {
-      "jobName": "Deploy DEMO dev",
+      "jobName": "NewFolder/Deploy DEMO dev",
       "jobDescription": "Deployment of the demo dev environment",
       "view": "Demo deploy",
       "pipelineScriptPath": "Jenkinsfile.groovy",
