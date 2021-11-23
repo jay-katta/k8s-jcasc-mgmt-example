@@ -1,28 +1,4 @@
 {
-  "multiBranchJobs": [
-    {
-      "jobName": "K8S JCasC Example",
-      "jobDescription": "K8S JCasC Example project",
-      "view": "Demo build",
-      "pipelineScriptPath": "Jenkinsfile",
-      "git": {
-        "repositoryId": "k8s-jcasc-app-example",
-        "repositoryUrl": "https://github.com/Ragin-LundF/k8s-jcasc-app-example.git",
-        "repositoryTrigger": "* * * * *"
-      }
-    },
-    {
-      "jobName": "K8S JCasC Example 2",
-      "jobDescription": "K8S JCasC Example project",
-      "view": "Demo build second",
-      "pipelineScriptPath": "Jenkinsfile",
-      "git": {
-        "repositoryId": "k8s-jcasc-app-example",
-        "repositoryUrl": "https://github.com/Ragin-LundF/k8s-jcasc-2app-example.git",
-        "repositoryTrigger": "* * * * *"
-      }
-    }
-  ],
   "pipelineJobs": [
     {
       "jobName": "Deploy DEMO dev",
@@ -33,86 +9,6 @@
       "remoteBranchName": "dev",
       "git": {
         "repositoryId": "deploy-demo-dev",
-        "repositoryUrl": "https://github.com/Ragin-LundF/k8s-jcasc-deploy-helmfile-example.git"
-      },
-      "logRotator": {
-        "daysToKeep": 2,
-        "numToKeep": 5
-      }
-    },
-    {
-      "jobName": "Deploy DEMO qa",
-      "jobDescription": "Deployment of the demo qa environment",
-      "view": "Demo deploy",
-      "pipelineScriptPath": "Jenkinsfile.groovy",
-      "remoteTriggerUuid": "28d29593-79f8-4d4a-a05b-2bf345316807",
-      "remoteBranchName": "qa",
-      "git": {
-        "repositoryId": "deploy-demo-qa",
-        "repositoryUrl": "https://github.com/Ragin-LundF/k8s-jcasc-deploy-helmfile-example.git"
-      },
-      "logRotator": {
-        "daysToKeep": 2,
-        "numToKeep": 5
-      }
-    },
-    {
-      "jobName": "Deploy DEMO preview",
-      "jobDescription": "Deployment of the demo preview environment",
-      "view": "Demo deploy",
-      "pipelineScriptPath": "Jenkinsfile.groovy",
-      "remoteTriggerUuid": "c0aa4635-2424-42f4-88b2-706d3663ff68",
-      "remoteBranchName": "preview",
-      "git": {
-        "repositoryId": "deploy-demo-preview",
-        "repositoryUrl": "https://github.com/Ragin-LundF/k8s-jcasc-deploy-helmfile-example.git"
-      },
-      "logRotator": {
-        "daysToKeep": 2,
-        "numToKeep": 5
-      }
-    },
-    {
-      "jobName": "Undeploy DEMO dev",
-      "jobDescription": "Deployment of the demo dev environment",
-      "view": "Demo deploy",
-      "pipelineScriptPath": "Jenkinsfile.undeploy.groovy",
-      "remoteTriggerUuid": "e858d2ac-e4b7-45ff-827c-8ce58e9f7dea",
-      "remoteBranchName": "dev",
-      "git": {
-        "repositoryId": "deploy-demo-dev",
-        "repositoryUrl": "https://github.com/Ragin-LundF/k8s-jcasc-deploy-helmfile-example.git"
-      },
-      "logRotator": {
-        "daysToKeep": 2,
-        "numToKeep": 5
-      }
-    },
-    {
-      "jobName": "Undeploy DEMO qa",
-      "jobDescription": "Deployment of the demo qa environment",
-      "view": "Demo deploy",
-      "pipelineScriptPath": "Jenkinsfile.undeploy.groovy",
-      "remoteTriggerUuid": "f8bedf28-4ced-4378-a7ed-b0fc547bb756",
-      "remoteBranchName": "qa",
-      "git": {
-        "repositoryId": "deploy-demo-qa",
-        "repositoryUrl": "https://github.com/Ragin-LundF/k8s-jcasc-deploy-helmfile-example.git"
-      },
-      "logRotator": {
-        "daysToKeep": 2,
-        "numToKeep": 5
-      }
-    },
-    {
-      "jobName": "Undeploy DEMO preview",
-      "jobDescription": "Deployment of the demo preview environment",
-      "view": "Demo deploy",
-      "pipelineScriptPath": "Jenkinsfile.undeploy.groovy",
-      "remoteTriggerUuid": "4d166db8-beb7-4689-b828-b2a0d9bc1daf",
-      "remoteBranchName": "preview",
-      "git": {
-        "repositoryId": "deploy-demo-preview",
         "repositoryUrl": "https://github.com/Ragin-LundF/k8s-jcasc-deploy-helmfile-example.git"
       },
       "logRotator": {
