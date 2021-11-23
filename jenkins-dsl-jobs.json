@@ -8,7 +8,7 @@
       "remoteTriggerUuid": "6f33625a-667e-4043-97f5-a8341eb3fa4b",
       "remoteBranchName": "dev",
       "git": {
-        "repositoryId": "deploy-demo-dev",
+        "repositoryId": "deploy-demo-dev1",
         "repositoryUrl": "https://github.com/Ragin-LundF/k8s-jcasc-deploy-helmfile-example.git"
       },
       "logRotator": {
